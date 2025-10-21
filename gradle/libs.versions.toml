@@ -38,6 +38,3 @@ room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
 
 compose-ui-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "composeCompiler" }
 room-common-jvm = { group = "androidx.room", name = "room-common-jvm", version.ref = "roomCommonJvm" }
-[plugins]
-kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlinVersion" }
-serialization = {id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "jvmVersion"}

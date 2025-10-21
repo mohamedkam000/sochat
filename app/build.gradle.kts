@@ -58,30 +58,42 @@ android {
 }
 
 dependencies {
+    // Compose BOM (keeps Compose library versions aligned)
     implementation(platform("androidx.compose:compose-bom:2025.10.0"))
-    implementation("androidx.compose.ui:ui-tooling-preview")
 
-    implementation(libs.datastore)
+    // Compose UI
+    implementation("androidx.compose.ui:ui-tooling-preview:1.10.0-alpha05")
+    implementation("androidx.compose.ui:ui:1.10.0-alpha05")
+    implementation("androidx.compose.material3:material3:1.5.0-alpha06")
+    implementation("androidx.activity:activity-compose:1.12.0-alpha09")
 
-    implementation(libs.coroutines.core)
-    implementation(libs.coroutines.android)
+    // DataStore
+    implementation("androidx.datastore:datastore-preferences:1.2.0-alpha02")
 
-    implementation(libs.lifecycle.viewmodel)
-    implementation(libs.lifecycle.runtime)
+    // Kotlin Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
 
-    implementation(libs.navigation.compose)
+    // Lifecycle
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.10.0-alpha05")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.10.0-alpha05")
 
-    implementation(libs.room.runtime)
-    implementation(libs.room.ktx)
-    implementation(libs.room.common.jvm)
-    ksp(libs.room.compiler)
+    // Navigation
+    implementation("androidx.navigation:navigation-compose:2.9.5")
 
-    implementation(libs.core.ktx)
-    implementation(libs.activity.compose)
-    implementation(libs.compose.ui)
-    implementation(libs.compose.material3)
-    implementation(libs.koin.androidx.compose)
-    implementation(libs.koin.androidx.navigation)
+    // Room
+    implementation("androidx.room:room-runtime:2.8.2")
+    implementation("androidx.room:room-ktx:2.8.2")
+    implementation("androidx.room:room-common-jvm:2.8.2")
+    ksp("androidx.room:room-compiler:2.8.2")
 
-    implementation(libs.kotlinx.serialization.json)
+    // Core
+    implementation("androidx.core:core-ktx:1.17.0")
+
+    // Koin
+    implementation("io.insert-koin:koin-androidx-compose:4.1.2-Beta1")
+    implementation("io.insert-koin:koin-androidx-compose-navigation:4.1.2-Beta1")
+
+    // Kotlin Serialization
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.9.0")
 }

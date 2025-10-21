@@ -2,10 +2,10 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
     id("com.android.application")
-    id("com.google.devtools.ksp")
+//    id("com.google.devtools.ksp")
 //    id("kotlin-kapt")
-//    id("org.jetbrains.kotlin.plugin.compose")
-//    id("org.jetbrains.kotlin.plugin.serialization")
+    id("org.jetbrains.kotlin.plugin.compose")
+    id("org.jetbrains.kotlin.plugin.serialization")
 }
 
 kotlin {

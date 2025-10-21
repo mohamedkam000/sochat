@@ -79,7 +79,6 @@ dependencies {
     implementation(libs.core.ktx)
     implementation(libs.activity.compose)
     implementation(libs.compose.ui)
-    implementation(libs.compose.ui.preview)
     implementation(libs.compose.material3)
     implementation(libs.koin.androidx.compose)
     implementation(libs.koin.androidx.navigation)

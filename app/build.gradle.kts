@@ -58,6 +58,9 @@ android {
 }
 
 dependencies {
+    implementation(platform("androidx.compose:compose-bom:2025.10.0"))
+    implementation("androidx.compose.ui:ui-tooling-preview")
+
     implementation(libs.datastore)
 
     implementation(libs.coroutines.core)

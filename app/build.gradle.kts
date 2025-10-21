@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
     id("com.android.application")
-//    id("com.google.devtools.ksp")
+    id("com.google.devtools.ksp")
 //    id("kotlin-kapt")
     id("org.jetbrains.kotlin.plugin.compose")
     id("org.jetbrains.kotlin.plugin.serialization")
@@ -85,7 +85,7 @@ dependencies {
     implementation("androidx.room:room-runtime:2.8.2")
     implementation("androidx.room:room-ktx:2.8.2")
     implementation("androidx.room:room-common-jvm:2.8.2")
-    annotationProcessor("androidx.room:room-compiler:2.8.2")
+    ksp("androidx.room:room-compiler:2.8.2")
 
     // Core
     implementation("androidx.core:core-ktx:1.17.0")

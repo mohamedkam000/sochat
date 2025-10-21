@@ -60,11 +60,5 @@ fun SocketChatNavigation() {
         composable(Screens.SettingsScreen.name){
             SettingsScreen(navController)
         }
-        composable(Screens.AboutScreen.name){
-            AboutScreen(navController)
-        }
-        composable(Screens.DonateScreen.name){
-            DonateScreen(navController)
-        }
     }
 }

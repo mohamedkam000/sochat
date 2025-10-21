@@ -87,22 +87,6 @@ fun ClientUsersListScreen(
                             Icon(painter = painterResource(R.drawable.settings), null,
                                 )
                         }
-                        IconButton(
-                            onClick = {
-                                navController.navigate(Screens.DonateScreen.name)
-                            },
-                        ) {
-                            Icon(painter = painterResource(R.drawable.donate), null,
-                            )
-                        }
-                        IconButton(
-                            onClick = {
-                                navController.navigate(Screens.AboutScreen.name)
-                            },
-                        ) {
-                            Icon(painter = painterResource(R.drawable.about), null,
-                            )
-                        }
                     },
                     floatingActionButton = {
                         FloatingActionButton (

@@ -133,16 +133,6 @@ fun ConnectingScreen(
                         navController.navigate(Screens.LocalUserListScreen.name)
                     }
                 }
-
-                item{
-                    AppIconButton(
-                        icon = R.drawable.about,
-                        text = "About",
-                        modifier = Modifier.padding(8.dp)
-                    ) {
-                        navController.navigate(Screens.AboutScreen.name)
-                    }
-                }
             }
         }
     }

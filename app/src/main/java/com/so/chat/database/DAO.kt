@@ -50,4 +50,3 @@ interface MessageDao {
     fun getAllUsers(): Flow<List<LocalUser>>
 
 }
-

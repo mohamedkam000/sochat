@@ -40,14 +40,14 @@ fun HostSetupScreen(
         verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text("Socket Chat",
-            style = MaterialTheme.typography.headlineMedium,
-            textAlign = TextAlign.Center,
-            modifier = Modifier.padding(
-                vertical = 16.dp, horizontal = 16.dp
-            ),
-            color = MaterialTheme.colorScheme.primary
-        )
+//         Text("Socket Chat",
+//             style = MaterialTheme.typography.headlineMedium,
+//             textAlign = TextAlign.Center,
+//             modifier = Modifier.padding(
+//                 vertical = 16.dp, horizontal = 16.dp
+//             ),
+//             color = MaterialTheme.colorScheme.primary
+//         )
 
         Spacer(Modifier.height(60.dp))
 
@@ -80,7 +80,6 @@ fun HostSetupScreen(
             color = MaterialTheme.colorScheme.primary,
             modifier = Modifier.padding(vertical = 32.dp)
             )
-
 
         AppTextField (
             modifier = Modifier.fillMaxWidth()

@@ -1,13 +1,7 @@
 package com.so.chat.screens
 
 import android.util.Log
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.*
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -51,14 +45,14 @@ fun JoinServerScreen(
         verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text("Socket Chat",
-            style = MaterialTheme.typography.headlineMedium,
-            textAlign = TextAlign.Center,
-            modifier = Modifier.padding(
-                vertical = 16.dp, horizontal = 16.dp
-            ),
-            color = MaterialTheme.colorScheme.primary
-        )
+//         Text("Socket Chat",
+//             style = MaterialTheme.typography.headlineMedium,
+//             textAlign = TextAlign.Center,
+//             modifier = Modifier.padding(
+//                 vertical = 16.dp, horizontal = 16.dp
+//             ),
+//             color = MaterialTheme.colorScheme.primary
+//         )
 
         Spacer(Modifier.height(60.dp))
 

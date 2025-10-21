@@ -3,13 +3,7 @@ package com.so.chat.screens
 import android.app.Activity
 import android.widget.Toast
 import androidx.activity.compose.BackHandler
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.rememberScrollState
@@ -72,14 +66,14 @@ fun ConnectingScreen(
             verticalArrangement = Arrangement.Top,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Text("Socket Chat",
-                style = MaterialTheme.typography.headlineMedium,
-                textAlign = TextAlign.Center,
-                modifier = Modifier.padding(
-                    vertical = 16.dp, horizontal = 16.dp
-                ),
-                color = MaterialTheme.colorScheme.primary
-            )
+//             Text("Socket Chat",
+//                 style = MaterialTheme.typography.headlineMedium,
+//                 textAlign = TextAlign.Center,
+//                 modifier = Modifier.padding(
+//                     vertical = 16.dp, horizontal = 16.dp
+//                 ),
+//                 color = MaterialTheme.colorScheme.primary
+//             )
 
             Spacer(Modifier.height(60.dp))
 

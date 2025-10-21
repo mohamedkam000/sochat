@@ -37,7 +37,7 @@ val appModule = module {
     single { provideDataStore(androidContext()) }
     single { UserIdentityManager(get()) }
 
-    single { Room.databaseBuilder(get(), AppDatabase::class.java, "socket_chat.db")
+    single { Room.databaseBuilder(get(), AppDatabase::class.java, "so_chat.db")
         .addTypeConverter(Converters())
         .fallbackToDestructiveMigration(false)
         .build() }

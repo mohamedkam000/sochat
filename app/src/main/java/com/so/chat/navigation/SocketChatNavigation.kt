@@ -14,7 +14,7 @@ import org.koin.androidx.compose.koinViewModel
 import org.koin.compose.koinInject
 
 @Composable
-fun SocketChatNavigation() {
+fun SoChatNavigation() {
     val navController = rememberNavController()
 
     NavHost(navController = navController, startDestination = Screens.LauncherScreen.name){

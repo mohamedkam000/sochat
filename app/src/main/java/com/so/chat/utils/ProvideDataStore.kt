@@ -8,6 +8,6 @@ import androidx.datastore.preferences.preferencesDataStoreFile
 
 fun provideDataStore(context: Context): DataStore<Preferences> {
     return PreferenceDataStoreFactory.create(
-        produceFile = { context.preferencesDataStoreFile("socket_chat_prefs") }
+        produceFile = { context.preferencesDataStoreFile("so_chat_prefs") }
     )
 }

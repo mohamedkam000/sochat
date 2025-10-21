@@ -7,6 +7,10 @@ plugins {
     id("org.jetbrains.kotlin.plugin.serialization")
 }
 
+kotlin {
+    jvmToolchain(21)
+}
+
 android {
     namespace = "com.so.chat"
     compileSdk = 36
@@ -17,6 +21,9 @@ android {
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
+        ndk {
+            abiFilters += listOf("arm64-v8a")
+        }
         vectorDrawables.useSupportLibrary = true
     }
 
@@ -38,22 +45,13 @@ android {
         }
     }
 
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
-    }
-
-    kotlin.compilerOptions {
-        jvmTarget.set(JvmTarget.JVM_11)
-    }
-
     buildFeatures {
         compose = true
     }
 
-    dependenciesInfo {
-        includeInApk = false
-        includeInBundle = false
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
 }
 

@@ -41,17 +41,17 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
 
-    kotlinOptions {
-        jvmTarget = "1.8"
+    kotlin.compilerOptions {
+        jvmTarget.set(JvmTarget.JVM_11)
     }
 
     buildFeatures {
         compose = true
-        buildConfig = true
     }
 
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.0"
+    dependenciesInfo {
+        includeInApk = false
+        includeInBundle = false
     }
 }
 

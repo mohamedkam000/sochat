@@ -23,7 +23,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             SoChatTheme(
-                useDarkTheme = false
+                useDarkTheme = true
             ) {
                 Surface(
                     modifier = Modifier.fillMaxSize(),

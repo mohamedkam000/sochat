@@ -47,8 +47,8 @@ fun SettingsScreen(
     val dpDataStore = RoundedCornerDataStore(context)
     val spDataStore = ChatTextSizeDataStore(context)
 
-    val dpValue = dpDataStore.getDp.collectAsState(initial = 0f).value
-    val spValue = spDataStore.getTextSize.collectAsState(initial = 9f).value
+    val dpValue = dpDataStore.getDp.collectAsState(initial = 16f).value
+    val spValue = spDataStore.getTextSize.collectAsState(initial = 12f).value
 
     var dpInput by remember{
         mutableStateOf(dpValue)

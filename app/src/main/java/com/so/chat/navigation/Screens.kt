@@ -12,5 +12,5 @@ enum class Screens {
     ServerUserChatScreen,
     LocalUserListScreen,
     LocalUserChatScreen,
-    SettingsScreen
+//    SettingsScreen
 }

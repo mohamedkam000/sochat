@@ -108,25 +108,25 @@ fun ConnectingScreen(
                     }
                 }
 
-                item{
-                    AppIconButton(
-                        icon = R.drawable.settings,
-                        text = "Settings",
-                        modifier = Modifier.padding(8.dp)
-                    ) {
-                        navController.navigate(Screens.SettingsScreen.name)
-                    }
-                }
-
-                item{
-                    AppIconButton(
-                        icon = R.drawable.chat_history,
-                        text = "All Chats",
-                        modifier = Modifier.padding(8.dp)
-                    ) {
-                        navController.navigate(Screens.LocalUserListScreen.name)
-                    }
-                }
+//                 item{
+//                     AppIconButton(
+//                         icon = R.drawable.settings,
+//                         text = "Settings",
+//                         modifier = Modifier.padding(8.dp)
+//                     ) {
+//                         navController.navigate(Screens.SettingsScreen.name)
+//                     }
+//                 }
+// 
+//                 item{
+//                     AppIconButton(
+//                         icon = R.drawable.chat_history,
+//                         text = "All Chats",
+//                         modifier = Modifier.padding(8.dp)
+//                     ) {
+//                         navController.navigate(Screens.LocalUserListScreen.name)
+//                     }
+//                 }
             }
         }
     }

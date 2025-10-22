@@ -29,3 +29,23 @@ class RoundedCornerDataStore (private val context: Context) {
         }
     }
 }
+
+class ChatTextSizeDataStore(private val context: Context) {
+    companion object{
+
+        private val Context.dataStore: DataStore<Preferences> by preferencesDataStore("textSize")
+
+        val spKey = floatPreferencesKey("spKey")
+    }
+
+    val getTextSize: Flow<Float?> = context.dataStore.data
+        .map {
+            it[spKey] ?: 18f
+        }
+
+    suspend fun saveTextSize(size: Float){
+        context.dataStore.edit {
+            it[spKey] = size
+        }
+    }
+}

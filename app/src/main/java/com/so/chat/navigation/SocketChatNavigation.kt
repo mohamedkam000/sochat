@@ -57,8 +57,8 @@ fun SoChatNavigation() {
         composable(Screens.LocalUserListScreen.name){
             LocalUserListScreen(navController, koinViewModel())
         }
-        composable(Screens.SettingsScreen.name){
-            SettingsScreen(navController)
-        }
+//        composable(Screens.SettingsScreen.name){
+//            SettingsScreen(navController)
+//        }
     }
 }

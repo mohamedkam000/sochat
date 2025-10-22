@@ -75,37 +75,37 @@ fun ServerUsersListScreen(
     if (user != null){
         Scaffold (
             modifier = Modifier.fillMaxWidth(),
-            bottomBar = {
-                BottomAppBar(
-                    modifier = Modifier.fillMaxWidth(),
-                    actions = {
-                        IconButton(
-                            onClick = {
-                                navController.navigate(Screens.SettingsScreen.name)
-                            },
-                        ) {
-                            Icon(painter = painterResource(R.drawable.settings), null,
-                            )
-                        }
-                    },
-                    floatingActionButton = {
-                        FloatingActionButton (
-                            onClick = {
-                                viewModel.disconnect()
-                                navController.navigate(Screens.ConnectingScreen.name) {
-                                    popUpTo(Screens.ConnectingScreen.name) {
-                                        inclusive = true
-                                    }
-                                    launchSingleTop = true
-                                }
-                            },
-                        ) {
-                            Icon(imageVector = Icons.AutoMirrored.Filled.ExitToApp, null,
-                            )
-                        }
-                    }
-                )
-            }
+//             bottomBar = {
+//                 BottomAppBar(
+//                     modifier = Modifier.fillMaxWidth(),
+//                     actions = {
+//                         IconButton(
+//                             onClick = {
+//                                 navController.navigate(Screens.SettingsScreen.name)
+//                             },
+//                         ) {
+//                             Icon(painter = painterResource(R.drawable.settings), null,
+//                             )
+//                         }
+//                     },
+//                     floatingActionButton = {
+//                         FloatingActionButton (
+//                             onClick = {
+//                                 viewModel.disconnect()
+//                                 navController.navigate(Screens.ConnectingScreen.name) {
+//                                     popUpTo(Screens.ConnectingScreen.name) {
+//                                         inclusive = true
+//                                     }
+//                                     launchSingleTop = true
+//                                 }
+//                             },
+//                         ) {
+//                             Icon(imageVector = Icons.AutoMirrored.Filled.ExitToApp, null,
+//                             )
+//                         }
+//                     }
+//                 )
+//             }
         ){
             LazyColumn (
                 modifier = Modifier.fillMaxWidth(),

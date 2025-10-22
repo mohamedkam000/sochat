@@ -81,13 +81,8 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 <p align="center">
-  <a href="https://github.com/mohamedkam000" target="_blank">
-    <img
-      src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='150' height='150'><defs><clipPath id='c'><circle cx='75' cy='75' r='75'/></clipPath></defs><image href='https://github.com/mohamedkam000.png' width='150' height='150' clip-path='url(%23c)' preserveAspectRatio='xMidYMid slice'/></svg>"
-      alt="Muhammad Kamal"
-      width="150"
-      height="150"
-    />
+  <a href="https://github.com/mohamedkam000">
+    <img src="https://avatars.githubusercontent.com/u/112594800?v=4" alt="Muhammad Kamal" width="150" style="border-radius:50%;">
   </a>
 </p>
 

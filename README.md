@@ -81,9 +81,7 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 <p align="center">
-  <a href="https://github.com/mohamedkam000">
-    <img src="https://avatars.githubusercontent.com/u/112594800?v=4" alt="Muhammad Kamal" width="150" style="border-radius:50%;">
-  </a>
+  <img src="https://github.com/mohamedkam000.png" alt="Profile picture" width="150" height="150" style="border-radius: 50%;"/>
 </p>
 
 <p align="center">

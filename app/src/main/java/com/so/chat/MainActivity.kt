@@ -23,30 +23,35 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
 
         setContent {
-            val isDarkTheme = isSystemInDarkTheme()
+            MainContent()
+        }
+    }
+}
 
-            SoChatTheme(useDarkTheme = isDarkTheme) {
-                val view = LocalView.current
-                SideEffect {
-                    val window = window
-                    val insetsController = WindowInsetsControllerCompat(window, view)
-                
-                    val backgroundColor = MaterialTheme.colorScheme.background.toArgb()
-                    window.statusBarColor = backgroundColor
-                    window.navigationBarColor = backgroundColor
-                    insetsController.isAppearanceLightStatusBars = !isDarkTheme
-                    insetsController.isAppearanceLightNavigationBars = !isDarkTheme
-                }
+@Composable
+fun MainContent() {
+    val isDarkTheme = isSystemInDarkTheme()
+    val view = LocalView.current
 
-                Surface(
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .padding(WindowInsets.safeDrawing.asPaddingValues()),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    SoChatNavigation()
-                }
-            }
+    SideEffect {
+        val window = (view.context as ComponentActivity).window
+        val insetsController = WindowInsetsControllerCompat(window, view)
+
+        val backgroundColor = MaterialTheme.colorScheme.background.toArgb()
+        window.statusBarColor = backgroundColor
+        window.navigationBarColor = backgroundColor
+        insetsController.isAppearanceLightStatusBars = !isDarkTheme
+        insetsController.isAppearanceLightNavigationBars = !isDarkTheme
+    }
+
+    SoChatTheme(useDarkTheme = isDarkTheme) {
+        Surface(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(WindowInsets.safeDrawing.asPaddingValues()),
+            color = MaterialTheme.colorScheme.background
+        ) {
+            SoChatNavigation()
         }
     }
 }

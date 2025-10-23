@@ -30,10 +30,10 @@ class MainActivity : ComponentActivity() {
                 SideEffect {
                     val window = window
                     val insetsController = WindowInsetsControllerCompat(window, view)
-
-                    window.statusBarColor = android.graphics.Color.TRANSPARENT
-                    window.navigationBarColor = android.graphics.Color.TRANSPARENT
-
+                
+                    val backgroundColor = MaterialTheme.colorScheme.background.toArgb()
+                    window.statusBarColor = backgroundColor
+                    window.navigationBarColor = backgroundColor
                     insetsController.isAppearanceLightStatusBars = !isDarkTheme
                     insetsController.isAppearanceLightNavigationBars = !isDarkTheme
                 }
